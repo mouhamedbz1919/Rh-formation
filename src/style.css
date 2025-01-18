@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    /* border: 1px solid transparent; */
+}
+body{
+    font-family: "Georama", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    margin: 0 auto;
+    padding: 0 70px;
+}
+/* nav */
+nav{
+    background-color: #25344f;
+    color: #fff;
+    height: 128px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+nav .container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .container .logo{
+
+}
+nav .container .logo img{
+
+}
+nav .container ul.list{
+    display: flex;
+}
+nav .container ul.list li {
+    padding: 0 25px;
+}
+nav .container ul.list li a{
+    color: #fff;
+}
+nav .container ul.list li a i{
+    font-size: 15px;
+    padding-left: 10px;
+}
+/* main */
+main{
+    background-image: url(./assets/backgorund.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* min-height: 100vh; */
+    padding-top: 60px;
+}
+main .advertisement{
+    background-color: #fff;
+    height: 753px;
+    width: 802px;
+    border-radius: 50px;
+    padding: 50px 74px;
+    margin: 0 auto;
+}
+main .advertisement p.head-text{
+    color: #632024;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    padding: 20px 0;
+}
+main .advertisement p.description{
+    line-height: 50px;
+    font-size: 22px;
+    padding-top: 25px;
+}
+main .posts{
+    position: relative;
+    margin-top: 200px;
+}
+main .posts .cards{
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 111111111111111111;
+}
+main .posts .cards .card{
+    position: relative;
+    width: 377.45px;
+    height: 399.82px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 30px;
+    z-index: 222;
+}
+main .posts .cards .card img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -50px;
+}
+main .posts .cards .card p.title{
+    color: #632024;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    padding: 30px 0;
+}
+main .posts .cards .card p.description{
+    line-height: 25px;
+    font-size: 17px;
+}
+main .posts .cards .card a.button{
+    background-color: #632024;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    /* width: 100%; */
+    border-radius: 27px;
+}
+main .posts > img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(100vw - 150px);
+}
+main .contact{
+    margin: 100px auto 0;
+    padding-bottom: 150px;
+}
+main .contact .container{
+    display: flex;
+    padding: 0 200px;
+    justify-content: center;
+}
+main .contact .col-1{
+    background: #632024;
+    color: #fff;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+main .contact .col-1 h1{
+    padding-top: 80px;
+    font-size: 50px;
+    height: 100%;
+}
+main .contact form.col-2{
+    /* width: 100%; */
+    flex: 1;
+    padding: 50px 100px;
+    background-color: #fff;
+    border-top-right-radius: 27px;
+    border-bottom-right-radius: 27px;
+}
+main .contact form.col-2 h2{
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 25px;
+    color: #632024;
+}
+main .contact form.col-2 input , main .contact form.col-2 textarea{
+    padding: 20px 40px;
+    border-radius: 10px;
+    border: 2px solid #868686;
+    outline: none;
+    font-size: 20px;
+    color: #5f5e5e;
+    flex: 1;
+}
+main .contact form.col-2 .name , main .contact form.col-2 .details , main .contact form.col-2 .description{
+    display: flex;
+    gap: 0 10px;
+    margin-bottom: 20px;
+}
+main .contact .col-2 .terms{
+    padding-left: 10px;
+    font-size: 20px;
+}
+main .contact .col-2 .terms input{
+    margin-right: 5px;
+    padding: 25px;
+}
+main .contact .col-2 .terms a{
+    color: #632024;
+}
+main .contact .col-2 button{
+    background-color: #632024;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    padding: 15px 35px;
+    margin-top: 20px;
+    /* width: 100%; */
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 27px;
+
+}
+/* formations */
+.formations{
+    /* margin-top: 30px; */
+}
+.formations .container{
+
+}
+.formations .container .row-1{}
+.formations .container .row-1 ul{
+    background-color: #3b547f;
+    display: flex;
+    justify-content: center;
+    border-radius: 29px;
+}
+.formations .container .row-1 ul li{
+    padding: 10px 50px;
+}
+.formations .container .row-1 ul li a{
+    color: #fff;
+    font-size: 30px;
+    padding: 0px 40px;
+    border-radius: 29px;
+}
+.formations .container .row-1 ul li a.active{
+    background-color: #506ea3;
+}
+.formations .container .row-2{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(auto,450px));
+    padding: 20px 50px;
+    justify-content: center;
+}
+.formations .container .row-2 .course{
+    width: 450px;
+    padding: 10px 0;
+}
+
+/* ============================ */
+main .video{
+}
+main .video .container{
+    /* padding: 0 70px; */
+    justify-content: center;
+}
+main .video .container .row-1{
+    /* go to .foramtions .row-1 */
+}
+main .video .container .row-2{
+    all: unset;
+    display: flex;
+    align-items: center;
+}
+main .video .container .row-2 img{
+    width: 70%;
+    text-align: center;
+}
+main .video .container .row-2 p.title{
+    font-size: 25px;
+}
+/* footer */
+footer{
+    background-image: url(./assets/footer-back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 193px; */
+    padding: 25px 0;
+}
+footer .container{
+
+}
+footer .container h4{
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+}
+footer .social-media{
+
+}
+footer .social-media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+footer .social-media a{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    color: #fff;
+    /* padding: 10px 15px; */
+    position: relative;
+}
+footer .social-media i{
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
