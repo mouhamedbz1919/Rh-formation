@@ -1,0 +1,60 @@
+
+/* formations */
+.formations{
+    /* margin-top: 30px; */
+}
+.formations .container{
+
+}
+.formations .container .row-1{}
+.formations .container .row-1 ul{
+    background-color: #3b547f;
+    display: flex;
+    justify-content: center;
+    border-radius: 29px;
+}
+.formations .container .row-1 ul li{
+    padding: 10px 50px;
+}
+.formations .container .row-1 ul li a{
+    color: #fff;
+    font-size: 30px;
+    padding: 0px 40px;
+    border-radius: 29px;
+}
+.formations .container .row-1 ul li a.active{
+    background-color: #506ea3;
+}
+.formations .container .row-2{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(auto,450px));
+    padding: 20px 50px;
+    justify-content: center;
+}
+.formations .container .row-2 .course{
+    width: 450px;
+    padding: 10px 0;
+}
+
+/* ============================ */
+main .video{
+}
+main .video .container{
+    /* padding: 0 70px; */
+    justify-content: center;
+}
+main .video .container .row-1{
+    /* go to .foramtions .row-1 */
+}
+main .video .container .row-2{
+    all: unset;
+    display: flex;
+    align-items: center;
+}
+main .video .container .row-2 img{
+    width: 70%;
+    text-align: center;
+}
+main .video .container .row-2 p.title{
+    font-size: 25px;
+}

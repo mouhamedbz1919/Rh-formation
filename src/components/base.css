@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    /* border: 1px solid transparent; */
+}
+body{
+    font-family: "Georama", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    margin: 0 auto;
+    padding: 0 70px;
+}
+/* nav */
+nav{
+    background-color: #25344f;
+    color: #fff;
+    height: 128px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+nav .container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .container .logo{
+
+}
+nav .container .logo img{
+
+}
+nav .container ul.list{
+    display: flex;
+}
+nav .container ul.list li {
+    padding: 0 25px;
+    color: #fff;
+}
+nav .container ul.list li a{
+    color: #fff;
+}
+nav .container ul.list li a i{
+    font-size: 15px;
+    padding-left: 10px;
+}
+/* footer */
+footer{
+    background-image: url(../assets/footer-back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 193px; */
+    padding: 25px 0;
+}
+footer .container{
+    display: flex;
+    flex-direction: column;
+}
+footer .container h4{
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+}
+footer .social-media{
+
+}
+footer .social-media {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+footer .social-media a{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    color: #fff;
+    /* padding: 10px 15px; */
+    position: relative;
+}
+footer .social-media i{
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

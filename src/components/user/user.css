@@ -1,0 +1,148 @@
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 80%; */
+    /* max-width: 1200px; */
+    background: radial-gradient(
+        circle,
+        #25344F 0%,
+        #617891 44%,
+        #D5B893 100%
+    );
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.main-container .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.main-container .image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.main-container .form-container {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-container .form-content {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.main-container .form-content h2 {
+    margin-top: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.main-container .form-content p {
+    font-size: 14px;
+    color: #ddd;
+    text-align: center;
+}
+
+.main-container .form-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.main-container .form-content input[type="email"],
+.main-container .form-content input[type="password"],
+.main-container .form-content input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+}
+
+.main-container .form-content button {
+    padding: 10px;
+    background-color: #002244;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main-container .form-content button:hover {
+    background-color: #004488;
+}
+
+.main-container .forgot-password {
+    font-size: 12px;
+    text-align: right;
+    color: #ddd;
+    text-decoration: none;
+}
+
+.main-container .forgot-password:hover {
+    color: #fff;
+}
+
+.main-container .divider {
+    margin: 20px 0;
+    color: #888;
+    text-align: center;
+}
+
+.main-container .social-login {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.main-container .social-login button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    background: transparent;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.main-container .social-login button:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.main-container .social-login .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.main-container .signup, .login {
+    font-size: 14px;
+    text-align: center;
+    color: #ddd;
+}
+
+.main-container .signup a, .login a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-container .signup a:hover, .login a:hover {
+    text-decoration: underline;
+}

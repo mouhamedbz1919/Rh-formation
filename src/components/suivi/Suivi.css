@@ -1,0 +1,347 @@
+  .suivi{
+    padding-bottom: 50px;
+    background: linear-gradient(to bottom, #2f4166, #8499b1);
+  }
+  .suivi h1{
+    text-align: center;
+    padding: 20px 0;
+    text-transform: capitalize;
+    font-size: 50px;
+    color: #fff;
+  }
+  .suivi .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Automatically adjusts the number of columns */
+    gap: 20px 50px; /* Space between cards */
+    padding: 20px; /* Space around the grid */
+    /* background: linear-gradient(to bottom, #22314f, #8499b1); Match the background color */
+  }
+  
+  .suivi .card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 15px 20px;
+    box-shadow: -7px 8px 13px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .suivi .card:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .suivi .card-content {
+    display: flex;
+    align-items: center;
+    gap: 0.1px;
+    margin-bottom: 15px;
+    
+  }
+  
+  .suivi .card-content img {
+    /* width: 150px; */
+    height: 100px;
+    border-radius: 4px;
+    margin-left: -35px;
+  }
+  
+  .suivi .card-text p {
+    margin: 0;
+    font-size: 18px;
+    color: #000;
+  }
+  
+  .suivi .card-button {
+    background-color: #5a6d85;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 22px;
+    transition: background-color 0.3s;
+  }
+  .suivi .add-member-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5a6d85;
+    color: white;
+    border: none;
+    border-radius: 58px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 44px;
+    transition: background-color 0.3s;
+    height: 50px;
+    width: 50px;
+    margin-top: 35px;
+
+  }
+
+  .suivi .add-member-button:hover{
+    background: #b3bfcd;
+  }
+  
+  .suivi .card-button:hover {
+    background-color: #94a7bc;
+  }
+  
+  /* Modal Overlay */
+  .suivi .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Modal Content */
+  .suivi .modal {
+    background-color: #fff;
+    width: 500px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: -7px 8px 13px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  /* Close Button in Modal */
+  .suivi .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Modal Header (for detailed view) */
+  .suivi .modal-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .suivi .modal-header img {
+    width: 150px;
+    height: 350px;
+    border-radius: 54px;
+  }
+  
+  .suivi .edit-button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  /* Modal Body */
+  .suivi .modal-body p {
+    margin: 5px 0;
+  }
+  
+  .suivi .projects {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .suivi .project-card {
+    background-color: #d5b893;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .suivi .add-project {
+    background-color: #5a6d85;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  /* Delete Button in Card */
+  .suivi .delete-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .suivi .delete-button:hover {
+    color: darkred;
+  }
+  
+
+  
+
+/* Modal Overlay */
+.suivi .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's on top of other content */
+}
+
+/* Modal Container */
+.suivi .modal {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 500px; /* Limit modal width */
+  padding: 20px;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out; /* Fade-in animation */
+}
+
+/* Modal Header */
+.suivi .modal-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.suivi .modal-header img {
+  width: 250px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.suivi .modal-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Close Button */
+.suivi .close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+}
+
+.suivi .close-button:hover {
+  color: #333;
+}
+
+/* Modal Body */
+.suivi .modal-body {
+  margin-top: 10px;
+}
+
+/* Form Group */
+.suivi .form-group {
+  margin-bottom: 15px;
+}
+
+.suivi .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.suivi .form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.suivi .form-group input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Save Button */
+.suivi .save-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.suivi .save-button:hover {
+  background-color: #0056b3;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .suivi .modal {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .suivi .modal-header img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .suivi .modal-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .suivi .form-group input {
+    font-size: 0.9rem;
+  }
+
+  .suivi .save-button {
+    font-size: 0.9rem;
+  }
+}
+  
