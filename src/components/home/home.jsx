@@ -1,8 +1,10 @@
-import ecje from './assets/ecje.png'
-import trianle1 from './assets/triangle-1.png'
-import trianle2 from './assets/triangle-2.png'
-import trianle3 from './assets/triangle-3.png'
-import line from './assets/line.png'
+import ecje from '../../assets/ecje.png'
+import trianle1 from '../../assets/triangle-1.png'
+import trianle2 from '../../assets/triangle-2.png'
+import trianle3 from '../../assets/triangle-3.png'
+import line from '../../assets/line.png'
+import '../home/home.css'
+
 export function Home(){
     return(
         <main>

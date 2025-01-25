@@ -1,5 +1,5 @@
-import playcourse from "./assets/play-course.png"
-
+import playcourse from "../../assets/play-course.png"
+import '../style.css'
 export function Course(){
     return(
         <main>

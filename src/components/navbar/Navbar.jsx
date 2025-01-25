@@ -1,6 +1,7 @@
-import star from './assets/star.png'
-import user from './assets/user.png'
-import logo from './assets/logo.png'
+import star from '../../assets/star.png'
+import user from '../../assets/user.png'
+import logo from '../../assets/logo.png'
+import '../base.css'
 export function Navbar(){
     return(
         <nav>

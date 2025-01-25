@@ -1,5 +1,4 @@
-import './style.css'
-
+import '../base.css'
 export function Footer(){
     return(
         <footer>

@@ -1,4 +1,5 @@
-import course from './course.png'
+import course from '../../assets/course.png'
+import '../style.css'
 export function Formations(){
     return(
         <main>
