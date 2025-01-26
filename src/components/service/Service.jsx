@@ -19,10 +19,12 @@ function Service() {
             <img src="src/assets/calendrier (1).png" alt="" />
           </div>
         </Link>
-        <div className="small-card">Recrutement
-        <img src="src/assets/recrutement (1).png" alt="" />
-
-        </div>
+        <Link to='not working'>
+          <div className="small-card">Recrutement
+          <img src="src/assets/recrutement (1).png" alt="" />
+          </div>
+        </Link>
+        
         <Link to='formation'>
           <div className="small-card">Espace Formation
           <img src="src/assets/commenter.png" alt="" />

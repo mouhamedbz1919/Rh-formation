@@ -4,7 +4,7 @@
   padding: 10px 0;
 }
 
-.card {
+.app-container .card {
   margin: 0 auto;
   border-radius: 16px;
   overflow: hidden;
