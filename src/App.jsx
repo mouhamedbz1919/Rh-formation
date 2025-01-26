@@ -9,6 +9,8 @@ import Pv from './components/pv/pv'
 import Suivi from "./components/suivi/Suivi"
 import Anniversaire from "./components/anniversaire/anniversaire"
 import Formations from './components/formations/formations'
+import User from './components/user/user'
+import Course from './components/course/course'
 // import Course from './components/course/course'
 export default function App(){
     return(
@@ -22,11 +24,12 @@ export default function App(){
                         <Route path="services/pv" element={<Pv/>} />
                         <Route path="services/anniversaire" element={<Anniversaire/>} />
                         <Route path="services/formation" element={<Formations/>} />
-                        <Route path="services/formation/course" element={<Formations/>} />
+                        <Route path="services/formation/course" element={<Course/>} />
                         <Route path="/calendrier" element={<Service/>} />
                         <Route path="/chat" element={<Chat/>} />
                         <Route path="/apropos" element={<Service/>} />
-                        <Route path="*" element={<p>no such file</p>} />
+                        <Route path="/user" element={<User/>} />
+                        <Route path="*" element={<h1>Not Found</h1>} />
                     </Routes>
                 <Footer/>
             </BrowserRouter>

@@ -1,6 +1,6 @@
 import playcourse from "../../assets/play-course.png"
 import '../style.css'
-export function Course(){
+function Course(){
     return(
         <main>
                 <div className="video formations">
@@ -23,3 +23,4 @@ export function Course(){
         </main>
     )
 }
+export default Course;

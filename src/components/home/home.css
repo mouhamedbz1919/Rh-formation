@@ -49,6 +49,7 @@ main .posts .cards .card img{
     left: 50%;
     transform: translateX(-50%);
     top: -50px;
+    z-index: 1111111111111;
 }
 main .posts .cards .card p.title{
     color: #632024;
@@ -70,6 +71,11 @@ main .posts .cards .card a.button{
     margin-top: 20px;
     /* width: 100%; */
     border-radius: 27px;
+    width: auto;
+    /* margin: auto; */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 main .posts > img{
     position: absolute;

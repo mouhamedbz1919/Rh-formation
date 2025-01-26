@@ -1,4 +1,5 @@
 import ecje from "../../assets/ecje.png"
+import ecje2 from "../../assets/ecje2.png"
 import search from '../../assets/search.png'
 import apple from '../../assets/apple.png'
 import '../user/user.css'
@@ -10,7 +11,7 @@ export default function User() {
     return (
         <div className="main-container">
         <div className="image-container">
-            <img src={ecje} alt="Cher Junior Entrepreneur" />
+            <img src={ecje2} alt="Cher Junior Entrepreneur" />
         </div>
         <div className="form-container">
             <div className="form-content">
@@ -19,10 +20,10 @@ export default function User() {
                 <h2>Cher Junior Entrepreneur</h2>
                 <p>Entrez vos identifiants pour accéder à votre compte</p>
                 <form>
-                    <label htmlFor="email">Adresse e-mail</label>
+                    {/* <label htmlFor="email">Adresse e-mail</label> */}
                     <input type="email" id="email" placeholder="entrez votre adresse" required />
 
-                    <label htmlFor="password">Mot de passe</label>
+                    {/* <label htmlFor="password">Mot de passe</label> */}
                     <input type="password" id="password" placeholder="mot de passe" required />
                     <a href="#" className="forgot-password">
                     mot de passe oublié
@@ -35,7 +36,7 @@ export default function User() {
 
                     <button type="submit">Login</button>
                 </form>
-                <div className="divider">ou</div>
+                {/* <div className="divider">ou</div> */}
                 <div className="social-login">
                     <button className="google">
                     <img src={search} alt="Google" className="icon" /> Sign in with Google
