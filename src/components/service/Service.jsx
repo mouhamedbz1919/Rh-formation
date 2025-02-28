@@ -19,7 +19,7 @@ function Service() {
             <img src="src/assets/calendrier (1).png" alt="" />
           </div>
         </Link>
-        <Link to='not working'>
+        <Link to='/accueil'>
           <div className="small-card">Recrutement
           <img src="src/assets/recrutement (1).png" alt="" />
           </div>

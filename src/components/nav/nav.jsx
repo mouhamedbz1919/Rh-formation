@@ -8,7 +8,7 @@ function Nav(){
         <nav>
            <div className="container">
                 <div className="logo">
-                    <Link to='/home'>
+                    <Link to='/accueil'>
                         <img src={logo} alt="" />
                     </Link>
                 </div>
@@ -21,7 +21,7 @@ function Nav(){
                     <li><img src={star} alt="" /></li>
 
                     {/* <li><a href="#">Calendrier</a></li> */}
-                    <li><Link to='not working'>Calendrier</Link></li>
+                    <li><Link to='/calendrier'>Calendrier</Link></li>
                     <li><img src={star} alt="" /></li>
 
                     {/* <li><a href="#">Chat</a></li> */}
@@ -29,7 +29,7 @@ function Nav(){
                     <li><img src={star} alt="" /></li>
 
                     {/* <li><a href="#">A propos</a></li> */}
-                    <li><Link to='not working'>A propos</Link></li>
+                    <li><Link to='/apropos'>A propos</Link></li>
                     <li><img src={star} alt="" /></li>
                 </ul>
                 <div className="user">

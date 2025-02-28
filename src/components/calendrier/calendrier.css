@@ -1,0 +1,58 @@
+main h1.calendar{
+  text-align: center;
+  font-size: 3rem;
+}
+.calendar-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 100px;
+  height: 100vh;
+}
+.calendar-container .sidebar {
+  width: 300px;
+  height: 500px;
+  background: #1b2a49;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.calendar-container .sidebar a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.calendar-container .sidebar a:hover {
+  background: #ff6b6b;
+  transform: translateX(10px);
+}
+
+@keyframes popUp {
+  from { transform: scale(0.9); }
+  to { transform: scale(1); }
+}
+.calendar-container .content{
+  width: 500px;
+}
+.calendar-container .content img {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  width: 100%;
+}
+
+.calendar-container .content img:hover {
+  transform: scale(1.8);
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
