@@ -17,7 +17,7 @@ class UsersController extends Controller
             'password' => 'required|string|max:12|min:8',
         ]);
         if($validator ->fails()){
-            return response()->json(['errors'=>$validator->errors(),422]);
+            return response()->json(['errors' => $validator->errors()], 422);
         }
         $user = User::create([
             'name'=>$request->name,

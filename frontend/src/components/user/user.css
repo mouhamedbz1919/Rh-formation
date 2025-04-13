@@ -172,3 +172,22 @@ p.login , p.signup{
 .main-container .signup a:hover, .login a:hover {
     text-decoration: underline;
 }
+/* handling success and error messages on submit */
+div.success{
+    background-color: rgba(0, 128, 0, 0.52);
+    color:#fff;
+    padding:8px;
+    text-align: center;
+    font-size:1.2em;
+    border-radius: 10px;
+    transition: all .5s;
+}
+div.error{
+    background-color: rgba(128, 0, 0, 0.52);
+    color:#fff;
+    padding:8px;
+    text-align: center;
+    font-size:1.2em;
+    border-radius: 10px;
+    transition: all .5s;
+}
