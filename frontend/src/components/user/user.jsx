@@ -3,12 +3,13 @@ import ecje2 from "../../assets/ecje2.png";
 import search from "../../assets/search.png";
 import apple from "../../assets/apple.png";
 import "../user/user.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom"; 
+import { useNavigate } from "react-router-dom";
 
 export default function User() {
     const [isLoginForm, setIsLoginForm] = useState(true);
+    const [isLoggedin, setIsLoggedin] = useState(false);
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -17,6 +18,16 @@ export default function User() {
     const [loading, setLoading] = useState(false);
     const navigate = useNavigate();
 
+    useEffect(() => {
+        const loggedInStatus = localStorage.getItem("isloggedin") === "true";
+        setIsLoggedin(loggedInStatus);
+    }, []);
+
+    useEffect(() => {
+        if (isLoggedin) {
+            localStorage.setItem("isloggedin", "true");
+        }
+    }, [isLoggedin]);
 
     // Register
     async function handleRegisterSubmit(e) {
@@ -49,6 +60,7 @@ export default function User() {
             }
         }
     }
+
     // Login
     async function handleLoginSubmit(e) {
         e.preventDefault();
@@ -66,14 +78,21 @@ export default function User() {
             console.log("Data:", response.data);
 
             if (response.data.token && response.data.user) {
-                setError("");
-                setSuccess("Connexion réussie !");
                 localStorage.setItem("token", response.data.token);
                 localStorage.setItem("user", JSON.stringify(response.data.user));
-                navigate("/dashboard");
+                setIsLoggedin(true);
+                setError("");
+                setSuccess("Connexion réussie !");
+                setLoading(false);
+
+                setTimeout(() => {
+                    navigate("/accueil");
+                    window.location.reload()
+                }, 2000);
             } else {
                 setSuccess("");
                 setError("Connexion invalide. Veuillez réessayer.");
+                setLoading(false);
             }
         } catch (err) {
             setSuccess("");
@@ -87,7 +106,6 @@ export default function User() {
             }
         }
     }
-
     return (
         <div className="main-container">
             <div className="image-container">
@@ -125,8 +143,8 @@ export default function User() {
                                     <input type="checkbox" id="remember" />
                                     <label htmlFor="remember">Se souvenir pendant 30 jours</label>
                                 </div>
-                                <button type="submit">
-                                    Se Connecter
+                                <button type="submit" disabled={loading}>
+                                    {loading ? "Connexion..." : "Se Connecter"}
                                 </button>
                             </form>
                             <div className="social-login">
@@ -183,9 +201,9 @@ export default function User() {
                                     onChange={(e) => setPassword(e.target.value)}
                                     required
                                 />
-                                <p style={{color:'red'}}>Le mot de passe doit être composé de 8 caracères</p>
-                                <button type="submit">
-                                    S'inscrire
+                                <p style={{ color: 'red' }}>Le mot de passe doit être composé de 8 caractères</p>
+                                <button type="submit" disabled={loading}>
+                                    {loading ? "Inscription..." : "S'inscrire"}
                                 </button>
                             </form>
                             <div className="divider">ou</div>
